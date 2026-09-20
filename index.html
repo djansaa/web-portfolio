@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="David Jansa — creative work and practical developer tools." />
     <title>David Jansa — Art &amp; Development</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body class="landing-page">
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="./" aria-label="David Jansa home"><span class="brand-mark">DJ</span><span>David Jansa<span class="brand-dot">.</span></span></a>
-        <span class="header-caption">Independent digital work</span>
+        <a class="brand" href="./" aria-label="David Jansa home"><span class="brand-mark">D<span>/</span>J</span><span>David Jansa<span class="brand-dot">*</span></span></a>
+        <span class="header-caption">PORTFOLIO / DIGITAL PRACTICE</span>
+        <nav class="top-nav" aria-label="Main navigation"><a href="./art/">Art</a><a href="./dev/">Dev</a></nav>
       </header>
 
       <main class="landing-main">
-        <div class="eyebrow"><span class="eyebrow-line"></span> SELECT A SPACE</div>
-        <h1>Two sides of<br /><em>making things.</em></h1>
-        <p class="landing-lead">A home for visual experiments and useful tools. Choose a direction and explore.</p>
+        <section class="landing-hero" aria-labelledby="landing-title">
+          <div class="landing-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> DAVID JANSA / PERSONAL WORKSPACE</div>
+            <h1 id="landing-title"><span class="hero-line">Make it</span><span class="hero-line hero-line-accent">mean <em>something.</em></span></h1>
+            <div class="hero-bottom"><p class="landing-lead">Visual ideas on one side. Useful software on the other. A small corner of the internet for both.</p><span class="hero-scroll">EXPLORE BELOW <span aria-hidden="true">↓</span></span></div>
+          </div>
+          <div class="hero-artwork" aria-hidden="true"><div class="artwork-grid"></div><span class="artwork-label artwork-label-top">DESIGN × CODE</span><span class="artwork-shape artwork-shape-one"></span><span class="artwork-shape artwork-shape-two"></span><span class="artwork-cross">✳</span><span class="artwork-label artwork-label-bottom">FORM FOLLOWS CURIOSITY / 2026</span></div>
+        </section>
+        <div class="selection-heading"><span>CHOOSE A DIRECTION</span><span>01 — 02</span></div>
         <div class="destination-grid">
           <a class="destination destination-art" href="./art/">
-            <span class="destination-index">01 / VISUAL WORK</span>
-            <span class="destination-bottom"><span><strong>Art</strong><small>Posters, design &amp; experiments<br />Coming soon</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
+            <span class="destination-index">01 / VISUAL WORK <span>IN PROGRESS</span></span>
+            <span class="destination-artwork" aria-hidden="true"><span class="poster-orbit"></span><span class="poster-core"></span><span class="poster-type">A<br />R<br />T</span></span>
+            <span class="destination-bottom"><span><strong>Art<span class="destination-period">.</span></strong><small>Posters, design &amp; visual experiments<br />A space taking shape</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
           </a>
           <a class="destination destination-dev" href="./dev/">
-            <span class="destination-index">02 / USEFUL SOFTWARE</span>
-            <span class="destination-bottom"><span><strong>Dev</strong><small>Thoughtful tools for everyday work<br />Explore API Documenter</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
+            <span class="destination-index">02 / USEFUL SOFTWARE <span>AVAILABLE NOW</span></span>
+            <span class="destination-artwork terminal-artwork" aria-hidden="true"><span class="terminal-top"><i></i><i></i><i></i><span>request.response</span></span><span class="terminal-code"><span><b>01</b> POST /v1/documents</span><span><b>02</b> { <em>"format"</em>: "clear" }</span><span><b>03</b> <strong>→ 200 OK</strong></span></span></span>
+            <span class="destination-bottom"><span><strong>Dev<span class="destination-period">.</span></strong><small>Small tools with a purpose<br />Start with API Documenter</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
           </a>
         </div>
       </main>
 
-      <footer class="site-footer"><span>© <span id="year">2026</span> David Jansa</span><span>Designed to make things clearer.</span></footer>
+      <footer class="site-footer"><span>© <span id="year">2026</span> DAVID JANSA</span><span>MADE WITH INTENTION / BUILT FOR THE WEB</span></footer>
     </div>
-    <script type="module" src="/src/site.ts"></script>
+    <script defer src="./assets/site.js"></script>
   </body>
 </html>

@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Create clear REST and SOAP request and response documentation in your browser." />
     <title>API Documenter — David Jansa</title>
-    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="../src/styles.css" />
   </head>
   <body class="dev-page">
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="../" aria-label="David Jansa home"><span class="brand-mark">DJ</span><span>David Jansa<span class="brand-dot">.</span></span></a>
+        <a class="brand" href="../" aria-label="David Jansa home"><span class="brand-mark">D<span>/</span>J</span><span>David Jansa<span class="brand-dot">*</span></span></a>
         <nav class="top-nav" aria-label="Main navigation"><a href="../">Home</a><a href="../art/">Art ↗</a></nav>
       </header>
       <main class="dev-main">
-        <div class="dev-intro"><div><div class="eyebrow"><span class="eyebrow-line"></span> 02 / DEVELOPER TOOLS</div><h1>API <em>Documenter.</em></h1><p>Turn raw requests and responses into documentation worth sharing. Your data stays in this browser.</p></div><span class="tool-version">TOOL 001 <span>↗</span></span></div>
+        <div class="dev-intro"><div class="dev-intro-grid" aria-hidden="true"></div><div class="dev-intro-content"><div class="eyebrow"><span class="eyebrow-line"></span> TOOL 001 / DEVELOPER WORKSPACE</div><h1>Give your API<br /><em>some clarity.</em></h1><p>From raw requests to a document worth sharing. REST and SOAP, organized in one place and processed entirely in your browser.</p><span class="dev-intro-tag">API DOCUMENTER <span aria-hidden="true">↗</span></span></div><span class="dev-intro-glyph" aria-hidden="true">{↗}</span></div>
+        <div class="workflow-strip" aria-label="How it works"><div><span>01</span><strong>Capture</strong><small>Paste requests &amp; responses</small></div><div><span>02</span><strong>Review</strong><small>Format &amp; protect secrets</small></div><div><span>03</span><strong>Export</strong><small>Download Word or PDF</small></div></div>
         <section class="tool" aria-label="API documenter">
           <div class="tool-toolbar">
             <div class="mode-tabs" role="tablist" aria-label="API type"><button class="mode-tab is-active" id="rest-tab" type="button" role="tab" aria-selected="true" data-mode="rest">REST API</button><button class="mode-tab" id="soap-tab" type="button" role="tab" aria-selected="false" data-mode="soap">SOAP API</button></div>
@@ -22,18 +23,18 @@
           </div>
           <div class="tool-body">
             <div class="editor-column">
-              <div class="section-heading"><div><span class="section-kicker">WORKSPACE</span><h2 id="workspace-title">REST document</h2><p>Add request and response cases. Use the arrow controls to set their order.</p></div><button id="add-case" class="button button-dark" type="button"><span aria-hidden="true">＋</span> Add case</button></div>
-              <div id="case-list" class="case-list" aria-live="polite"></div>
-              <div class="export-bar"><div><strong>Ready when you are.</strong><span>One file containing every case in this workspace.</span></div><div class="export-actions"><button id="export-docx" class="button button-outline" type="button">Download Word</button><button id="export-pdf" class="button button-dark" type="button">Download PDF <span aria-hidden="true">↗</span></button></div></div>
+              <div class="section-heading"><div><span class="section-kicker">YOUR DOCUMENT / 01</span><h2 id="workspace-title">REST document</h2><p>Build your documentation one request and response at a time.</p></div><button id="add-case" class="button button-dark" type="button"><span aria-hidden="true">＋</span> Add case</button></div>
+              <div id="case-list" class="case-list" aria-live="polite"><div class="empty-state"><strong>Loading editor…</strong>If this message remains, the JavaScript bundle did not load.</div></div>
+              <div class="export-bar"><div><span class="section-kicker">FINAL STEP / 03</span><strong>Make it shareable.</strong><span>Export every case in this workspace as one document.</span></div><div class="export-actions"><button id="export-docx" class="button button-outline" type="button">Word .docx</button><button id="export-pdf" class="button button-dark" type="button">PDF .pdf <span aria-hidden="true">↗</span></button></div></div>
             </div>
-            <aside class="inspector" aria-label="Sensitive value review"><div class="inspector-top"><span class="section-kicker">REVIEW PANEL</span><h2>Sensitive values <span id="finding-count" class="count-badge">0</span></h2><p>Review possible secrets before sharing. Replacements affect exports; the open editor keeps your original text.</p></div><div id="findings" class="findings"></div><div class="manual-secret"><label for="manual-value">Value not detected?</label><div class="manual-row"><input id="manual-value" type="text" placeholder="Paste an exact value" autocomplete="off" /><button id="add-manual" class="button button-outline" type="button">Add</button></div><p>Matches across this document will appear above. Drafts saved on this device use placeholders.</p></div></aside>
+            <aside class="inspector" aria-label="Sensitive value review"><div class="inspector-top"><span class="section-kicker">REVIEW / 02</span><div class="inspector-symbol" aria-hidden="true">✳</div><h2>Protect what<br />matters. <span id="finding-count" class="count-badge">0</span></h2><p>Possible secrets show up here. Navigate to each match and choose what appears in the exported file.</p></div><div id="findings" class="findings"></div><div class="manual-secret"><label for="manual-value">Missed a value?</label><div class="manual-row"><input id="manual-value" type="text" placeholder="Paste an exact value" autocomplete="off" /><button id="add-manual" class="button button-outline" type="button">Add</button></div><p>Replacements affect exports. Your open editor keeps its original text; saved drafts use placeholders.</p></div></aside>
           </div>
         </section>
-        <p class="privacy-note"><span aria-hidden="true">◇</span> Processing and downloads happen in your browser. Detection is best effort: review the document before sharing.</p>
+        <p class="privacy-note"><span aria-hidden="true">✳</span> YOUR DATA STAYS IN THIS BROWSER. DETECTION IS BEST EFFORT — REVIEW BEFORE SHARING.</p>
       </main>
-      <footer class="site-footer"><span>© <span id="year">2026</span> David Jansa</span><span>Built for clarity.</span></footer>
+      <footer class="site-footer"><span>© <span id="year">2026</span> DAVID JANSA</span><span>AN INDEPENDENT TOOL FOR CLEARER WORK</span></footer>
     </div>
     <dialog id="export-warning" class="warning-dialog"><form method="dialog"><span class="section-kicker">BEFORE YOU EXPORT</span><h2>Possible sensitive values remain</h2><p id="warning-text"></p><div class="dialog-actions"><button class="button button-outline" value="cancel">Go back</button><button class="button button-dark" value="continue">Export anyway</button></div></form></dialog>
-    <script type="module" src="/src/dev/main.ts"></script>
+    <script defer src="../assets/dev.js"></script>
   </body>
 </html>

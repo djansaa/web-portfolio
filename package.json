@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --configLoader runner",
-    "build": "tsc --noEmit && vite build --configLoader runner",
+    "dev": "npm run build:assets && vite --configLoader runner",
+    "build:assets": "node scripts/build-assets.mjs",
+    "build": "tsc --noEmit && npm run build:assets && vite build --configLoader runner && node scripts/copy-assets.mjs",
     "preview": "vite preview --configLoader runner",
     "test": "vitest run --configLoader runner"
   },
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@types/node": "^22.18.6",
     "@types/pdfmake": "^0.2.11",
+    "esbuild": "^0.28.2",
     "typescript": "^5.9.3",
     "vite": "^7.1.7",
     "vitest": "^5.0.1"
