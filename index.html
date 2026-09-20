@@ -1,133 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <meta name="description" content="Portfolio David Jansa - software engineer">
-    <link rel="stylesheet" href="styles.css">
-    <title>David Jansa's Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="David Jansa — creative work and practical developer tools." />
+    <title>David Jansa — Art &amp; Development</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="landing-page">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="David Jansa home"><span class="brand-mark">DJ</span><span>David Jansa<span class="brand-dot">.</span></span></a>
+        <span class="header-caption">Independent digital work</span>
+      </header>
 
-    <!--scroll bar-->
-    <div id="scroll-bar">
-        <div id="scroll-indicator"></div>
+      <main class="landing-main">
+        <div class="eyebrow"><span class="eyebrow-line"></span> SELECT A SPACE</div>
+        <h1>Two sides of<br /><em>making things.</em></h1>
+        <p class="landing-lead">A home for visual experiments and useful tools. Choose a direction and explore.</p>
+        <div class="destination-grid">
+          <a class="destination destination-art" href="./art/">
+            <span class="destination-index">01 / VISUAL WORK</span>
+            <span class="destination-bottom"><span><strong>Art</strong><small>Posters, design &amp; experiments<br />Coming soon</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
+          </a>
+          <a class="destination destination-dev" href="./dev/">
+            <span class="destination-index">02 / USEFUL SOFTWARE</span>
+            <span class="destination-bottom"><span><strong>Dev</strong><small>Thoughtful tools for everyday work<br />Explore API Documenter</small></span><span class="destination-arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </main>
+
+      <footer class="site-footer"><span>© <span id="year">2026</span> David Jansa</span><span>Designed to make things clearer.</span></footer>
     </div>
-
-    <!--left scroll bar-->
-    <nav class="scrollspy">
-        <ul>
-            <li><a href="#hero" class="active">Intro</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#work_experience">Work<br/>Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!---->
-    <section class="hero" id="hero">
-        <div class="left">
-            <h1>SOFTWARE<br/>DEVELOPER</h1>
-            <p class="subtitle">— DATA AND ML ENTHUSIAST</p>
-        </div>
-            <div class="right">
-                <p class="subtitle">— FULL STACK CAPABLE</p>
-                <h2>DAVID<br/>JANSA</h2>
-            </div>
-        <div class="scroll">↓<br/>SCROLL</div>
-    </section>
-
-    <!---->
-    <section class="sections" id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="filter-bar">
-            <span class="filter-label">Category:</span>
-            <button class="filter-button active" data-filter="all">All</button>
-            <button class="filter-button" data-filter="swe">Software Engineering</button>
-            <button class="filter-button" data-filter="de">Data Engineering</button>
-            <button class="filter-button" data-filter="ml">Machine Learning</button>
-            <button class="filter-button" data-filter="ai">Artificial Intelligence (LLMs)</button>
-        </div>
-        <div class="tech-filter-bar">
-            <span class="filter-label">Tech:</span>
-            <button class="tech-button active" data-tech="all">All</button>
-            <button class="tech-button" data-tech="cs">C#</button>
-            <button class="tech-button" data-tech="py">Python</button>
-            <button class="tech-button" data-tech="java">Java</button>
-            <button class="tech-button" data-tech="sql">SQL</button>
-        </div>
-
-        <div class="projects">
-            <div class="project swe">Projekt 1 - SWE</div>
-            <div class="project de">Projekt 2 - DE</div>
-            <div class="project ml">Projekt 3 - ML</div>
-            <div class="project swe ml">Projekt 4 - SWE + ML</div>
-        </div>
-    </section>
-
-    <!---->
-    <section class="sections" id="work_experience">
-        <h2>Work Experience</h2>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-        <p>cooooooooooooooooooooooooooooooooo</p>
-    </section>
-
-    <!---->
-    <section class="sections" id="contact">
-        <h2>Contact</h2>
-    </section>
-
-
-    <script src="scrollspy.js"></script>
-    <script src="scrollbar.js"></script>
-    <script src="logic.js"></script>
-</body>
+    <script type="module" src="/src/site.ts"></script>
+  </body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "name": "web-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "build": "tsc --noEmit && vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner",
+    "test": "vitest run --configLoader runner"
+  },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "pdfmake": "^0.2.20",
+    "xml-formatter": "^3.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "@types/pdfmake": "^0.2.11",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.7",
+    "vitest": "^5.0.1"
+  }
+}
